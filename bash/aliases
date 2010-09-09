@@ -1,0 +1,3 @@
+alias tmprestart="touch tmp/restart.txt"
+alias ls="ls -hF"
+alias less="less -r"
