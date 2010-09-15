@@ -8,6 +8,7 @@ Useful stuff I use on my Mac.
   
 ~/.bashrc
 
+  # EDIT PATH AS APPROPRIATE
   source ~/git/macsetup/bash/git-prompt
   source ~/git/macsetup/bash/git-completion
   source ~/git/macsetup/bash/aliases
