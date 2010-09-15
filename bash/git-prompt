@@ -55,9 +55,8 @@ __git_prompt ()
 
 function __my_ps1() {
   # See http://ascii-table.com/ansi-escape-sequences.php
-  local LIGHT_GREEN="\[\033[1;32m\]"
-  local       WHITE="\[\033[1;37m\]"
-  local       BLACK="\[\033[0;30m\]"
+  local GREEN="\[\033[0;32m\]"
+  local DEFAULT="\[\033[0;39m\]"
   case $TERM in
     xterm*)
       TITLEBAR='\[\033]0;\u@\h:\w\007\]'
@@ -66,7 +65,7 @@ function __my_ps1() {
     TITLEBAR=""
       ;;
   esac
-  PS1="${TITLEBAR}\W$LIGHT_GREEN\$(__git_prompt)$BLACK\$ "
+  PS1="${TITLEBAR}\W$GREEN\$(__git_prompt)$DEFAULT\$ "
 }
 
 __my_ps1
