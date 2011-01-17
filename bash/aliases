@@ -1,3 +1,4 @@
 alias tmprestart="touch tmp/restart.txt"
 alias ls="ls -hF"
 alias less="less -r"
+alias apachectl="sudo /usr/sbin/apachectl"
