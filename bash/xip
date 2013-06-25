@@ -1,0 +1,10 @@
+# Assumes wireless interface on en1. If arg is supplied, will try to open that POW app
+
+xip() {
+  local ip="$(ipconfig getifaddr en1)"
+  local app="$1"
+  if [ -z "$1" ] ; then
+    app="$(basename $PWD)"
+  fi
+  open http://${app}.${ip}.xip.io
+}
