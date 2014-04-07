@@ -14,8 +14,6 @@ Useful stuff I use on my Mac.
   source ~/git/macsetup/bash/git-completion
   source ~/git/macsetup/bash/aliases
   export PATH=/opt/local/bin:/opt/local/sbin:./script:$PATH
-  # Do rvm last
-  source ~/git/macsetup/bash/rvm
 ```
 
 # HomeBrew
