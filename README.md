@@ -1,13 +1,14 @@
 Useful stuff I use on my Mac.
 
-== Bash
+# Bash
 
-~/.bash_profile
-
+```bash
+  # ~/.bash_profile
   source ~/.bashrc
-  
-~/.bashrc
+```
 
+```bash
+  # ~/.bashrc
   # EDIT PATH AS APPROPRIATE
   source ~/git/macsetup/bash/git-prompt
   source ~/git/macsetup/bash/git-completion
@@ -15,4 +16,13 @@ Useful stuff I use on my Mac.
   export PATH=/opt/local/bin:/opt/local/sbin:./script:$PATH
   # Do rvm last
   source ~/git/macsetup/bash/rvm
+```
+
+# HomeBrew
+
+Doc: [brew.sh](http://brew.sh/)
+
+# RBenv
+
+Repo: [sstephenson/rbenv](https://github.com/sstephenson/rbenv)
 
