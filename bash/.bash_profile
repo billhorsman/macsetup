@@ -11,3 +11,8 @@ eval "$(rbenv init -)"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 export PATH="/usr/local/sbin:/usr/local/opt/mysql@5.6/bin:$PATH"
+
+# So we can compile against OpenSSL
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
